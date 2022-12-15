@@ -16,9 +16,9 @@ letter = input("Please enter a letter from the alphabet (a-z or A-Z): ")
 if len(letter) == 1 and letter.isalpha():
 	txt = 'The letter {} is a {}'
 	if letter.lower() in vowels:
-		print(txt.format(letter, 'vowel'))
+		type = 'vowel'
 	else: 
-		print(txt.format(letter, 'consonant'))
-	print()
+		type = 'consonant'
+	print(txt.format(letter, type))
 else:
 	print('A letter, please.')
